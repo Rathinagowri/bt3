@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ 
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1> Form </h1>
+<form name=myform>
+FirstName&nbsp;&nbsp;<input type=text id=r1><br><br>
+LastName&nbsp;&nbsp;<input type=text id=r2><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;<input type=text id=r3><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;<input type=text id=r4><br><br>
+Department&nbsp;&nbsp;<input type=text id=r5><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=button value="submit" onclick="dis();">
+<div class="container">
+  <h2>Table</h2>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th> Contact</th>
+        <th> Department </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id=a1></td>
+        <td id=a2></td>
+        <td id =a3></td>
+        <td id =a4></td>
+        <td id =a5></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+<script>
+function dis(){
+ document.getElementById("a1").innerHTML = document.forms["myform"]["r1"].value;
+document.getElementById("a2").innerHTML = document.forms["myform"]["r2"].value;
+document.getElementById("a3").innerHTML = document.forms["myform"]["r3"].value;
+document.getElementById("a4").innerHTML = document.forms["myform"]["r4"].value;
+document.getElementById("a5").innerHTML = document.forms["myform"]["r5"].value;
+}
+</script>
+</body>
+</html>
+
